@@ -28,7 +28,7 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 button.navbar-toggle.collapsed {
-  background-color: #646464;
+  background-color: #8c8c8c;
   border-radius: 100%;
   padding: 20px 15px 20px 15px;
   border-color: none;
@@ -36,7 +36,7 @@ button.navbar-toggle.collapsed {
   border: 0; }
 
 button.navbar-toggle {
-  background-color: #646464;
+  background-color: #8c8c8c;
   border-radius: 100%;
   padding: 20px 15px 20px 15px;
   border-color: transparent;
@@ -52,7 +52,7 @@ ul.nav-menu li a {
 
 .jumbotron-c {
   float: left;
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
   background-color: white;
   border-radius: 0px; }
 
@@ -83,7 +83,7 @@ p:nth-child(2) {
   width: 100%;
   height: 100%;
   float: left;
-  margin: 36px 0 0 0; }
+  margin: 30px 0 0 0; }
 
 .tile-1 > .front-1 {
   display: none; }
@@ -130,12 +130,9 @@ img {
   text-align: center;
   font-variant: normal;
   font-family: 'Open Sans';
-  margin: 90px 0 0 0;
-  font-size: 30px;
+  margin: 80px 0 0 0;
+  font-size: 32px;
   font-weight: 700; }
-
-.block-1 h1:nth-child(2) {
-  margin: 40px 0 0 0; }
 
 .tile-2 {
   position: relative;
@@ -319,9 +316,12 @@ img {
   .nav-custom {
     margin: 80px 0 0 0; }
   .nav-custom a.navbar-brand {
-    font-size: 28px; }
+    font-size: 27px; }
   ul.nav-menu li a {
     font-size: 18px; }
+  ul.nav-menu img {
+    width: 28px;
+    height: 28px; }
   .jumbotron-c {
     width: 100%;
     height: 140px;
@@ -347,8 +347,8 @@ img {
     50% {
       opacity: 0.0; } }
   .block h2 {
-    margin: 40px 0 10px 0;
-    font-size: 16px;
+    margin: 38px 0 10px 0;
+    font-size: 18px;
     text-align: center; }
   .block h1 {
     margin: 10px 0 0 0px;
@@ -356,7 +356,7 @@ img {
   .block p {
     margin: 10px 16px 0 16px;
     text-align: center;
-    font-size: 14px; }
+    font-size: 16px; }
   .block-1 h1 {
     margin: 90px 0 0 36px;
     font-size: 28px; }
@@ -532,8 +532,9 @@ img {
     border-radius: 0px; }
   #quote {
     width: 100%;
-    margin: 105px 0 0 0;
-    font-size: 18px; }
+    margin: 85px 0 0 0;
+    font-size: 18px;
+    font-weight: 600; }
   .tile-10 {
     width: 375px;
     height: 265px;
@@ -546,12 +547,12 @@ img {
     height: 70px;
     background-color: white; }
   .social-footer img {
-    width: 24px;
-    height: 24px;
-    margin: 20px 30px 0 100px; }
+    width: 25px;
+    height: 25px;
+    margin: 46px 10px 0 46px; }
   .footer-block p {
-    font-size: 17px;
-    margin: 46px 0 50px 80px; } }
+    font-size: 14px;
+    margin: 50px 0 50px 80px; } }
 
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
@@ -572,16 +573,16 @@ img {
     margin-top: -5px; }
   .block-1 h1 {
     margin: 110px 0 0 25px;
-    font-size: 40px; }
-  .block h2 {
-    margin: 32px 0 0 0;
-    font-size: 20px; }
-  .block h1 {
-    margin: 15px 0 0px 0;
     font-size: 38px; }
+  .block h2 {
+    margin: 36px 0 0 0;
+    font-size: 22px; }
+  .block h1 {
+    margin: 10px 0 0px 0;
+    font-size: 30px; }
   .block p {
-    margin: 20px 0 0 0;
-    font-size: 18px; }
+    margin: 14px 0 0 0;
+    font-size: 20px; }
   .tile-1 {
     width: 485px;
     height: 330px; }
@@ -660,7 +661,7 @@ img {
     background-image: url(../img/busMD.jpg); }
   #quote {
     width: 100%;
-    margin: 125px 0 0 0;
+    margin: 97.5px 0 0 0;
     font-size: 25px; }
   .tile-10 {
     width: 485px;
@@ -679,9 +680,9 @@ img {
   .social-footer img {
     width: 30px;
     height: 30px;
-    margin: 25px 5px 0 130px; }
+    margin: 50px 0 0 72.5px; }
   .footer-block p {
-    font-size: 17px;
+    font-size: 16px;
     margin: 55px 0 50px 120px; } }
 
 /* Large Devices, Wide Screens */
@@ -704,14 +705,14 @@ img {
   .block-1 h1 {
     margin: 150px 0 0 22.5px; }
   .block h2 {
-    margin: 35px 0 0 0;
-    font-size: 30px; }
+    margin: 44px 0 0 0;
+    font-size: 22px; }
   .block h1 {
-    margin: 18px 0 0 0;
-    font-size: 48px; }
+    margin: 14px 0 0 0;
+    font-size: 38px; }
   .block p {
-    margin: 30px 15px 0 15px;
-    font-size: 24px; }
+    margin: 20px 15px 0 15px;
+    font-size: 22px; }
   .tile-1 {
     width: 585px;
     height: 440px; }
@@ -806,7 +807,7 @@ img {
   .social-footer img {
     width: 34px;
     height: 34px;
-    margin: 10px 0 0 100px; }
+    margin: 50px 0 0 90px; }
   .footer-block p {
-    font-size: 20px;
-    margin: 10px 0 0 0 40px; } }
+    font-size: 18px;
+    margin: 10px 0 0 0 20px; } }
