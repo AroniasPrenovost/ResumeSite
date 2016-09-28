@@ -19,28 +19,44 @@ body {
 }
 
 .nav-custom {
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
     background: white !important;
     border: none !important;
 }
 
-button.navbar-toggle.collapsed {
-    background-color: rgb(72, 103, 184);
-}
-
 .nav-custom a.navbar-brand {
     color: rgb(72, 103, 184);
-    font-size:25px;
-    letter-spacing: -1px;
+    font-size:26px;
+    letter-spacing: -2px;
     font-weight: bold;
-    margin: -10px 0 0 0;
+    margin: 0 0 0 0;
+    font-family: 'Open Sans', sans-serif;
 } 
+
+button.navbar-toggle.collapsed {
+    background-color: rgb(100, 100, 100);
+    border-radius: 100%;
+    padding: 20px 15px 20px 15px;
+    border-color: none;
+    margin: -2px 0 12px 0;
+    border: 0;
+}
+
+button.navbar-toggle {
+    background-color: rgb(100, 100, 100);
+    border-radius: 100%;
+    padding: 20px 15px 20px 15px;
+    border-color: transparent;
+    margin: -2px 0 12px 0;
+    border: 0;
+}
 
 ul.nav-menu li a {
     opacity: 1;
     color: #000 !important;
     font-size: 15px;
     margin: 0 0 0 0;
+    border: 0;
 }
 
 
@@ -85,8 +101,6 @@ p:nth-child(2){
     margin: 36px 0 0 0;  
 }
 
-
-
 .tile-1 > .front-1 {
     display: none;
 }
@@ -125,7 +139,7 @@ img {
     text-align: center;
     color: rgb(137, 137, 137);
     padding: 4px 25px 0 25px;
-    font-size: 13px;    
+    font-size: 15px;    
     font-family: 'Open Sans';
 }
 
@@ -135,9 +149,13 @@ img {
     text-align: center;
     font-variant: normal;
     font-family: 'Open Sans';
-    margin: 90px 40px 0 40px;
-    font-size:26px;
+    margin: 90px 0 0 0;
+    font-size:30px;
     font-weight: 700;
+}
+
+.block-1 h1:nth-child(2){
+    margin: 40px 0 0 0;
 }
 
 .tile-2 {
@@ -290,8 +308,8 @@ img {
     color: white;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin: 70px 0 10px 0;
-    font-size: 16px;  
+    margin: 67.5px 0 10px 0;
+    font-size: 18px;  
     font-weight: 700; 
 }
 
@@ -335,21 +353,16 @@ img {
     margin: 25px 0 0 10px;
 }
 
-
 .footer-block p {
     width: 100%;
     color: rgb(72, 103, 184);
-    font-size: 12px;
-    margin: 35px 0 0 20px; 
+    font-size: 13px;
+    margin: 35px 20px 0 20px; 
     font-family: 'Open Sans';
 }
 
-
-
 /* Small Devices, Tablets */
 @media (min-width: 768px) {
-/*@media only screen and (min-width : 768px) { */
-
 
     .nav-custom {
         margin: 80px 0 0 0;
@@ -581,12 +594,10 @@ img {
         border-radius: 0px;
     }
 
-
     .tile-7 {
         width: 375px;
         height: 265px;
         background-color: rgb(242,242,242);
-
     }
 
     .tile-7 > .front-7 {
@@ -692,7 +703,6 @@ img {
 
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
-/*@media only screen and (min-width:992px) { */
 
     .nav-custom {
         margin: 70px 0 0 0;
@@ -913,7 +923,6 @@ img {
 
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) {
-/*@media only screen and (min-width:1200px) { */
 
 
     .nav-custom {
