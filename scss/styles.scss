@@ -33,10 +33,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 } 
 
+.nav-custom a.navbar-brand:hover {
+    color: rgb(72, 103, 184);
+}
+
+
 button.navbar-toggle.collapsed {
     background-color: rgb(140, 140, 140);
     border-radius: 100%;
-    padding: 20px 15px 20px 15px;
+    padding: 18px 15px 20px 15px;
     border-color: none;
     margin: -2px 0 12px 0;
     border: 0;
@@ -45,7 +50,7 @@ button.navbar-toggle.collapsed {
 button.navbar-toggle {
     background-color: rgb(140, 140, 140);
     border-radius: 100%;
-    padding: 20px 15px 20px 15px;
+    padding: 18px 15px 20px 15px;
     border-color: transparent;
     margin: -2px 0 12px 0;
     border: 0;
@@ -68,12 +73,13 @@ ul.nav-menu li a {
 }
 
 .jumbotron-c p{
-    font-size: 32px;
+    font-size: 30px;
     font-family: 'Open Sans', sans-serif;
-    color: rgb(100, 100, 100);
-    font-weight: 500;
+    color: rgb(60, 60, 60);
+    font-weight: 300;
     margin: 0 0 0 0;
     text-align: left;
+        opacity: .8;
 }
 
 p:nth-child(2){
@@ -117,30 +123,32 @@ img {
 
 .block h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    margin: 20px 0 10px 0;
+    font-size: 16px;
+    margin: 18px 0 0 0;
     text-align: center;
     font-style: normal;
     font-variant: normal;
-    font-weight: bold;
+    font-weight: 600;
     color: rgb(72, 103, 184);
 }
 .block h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
-    margin-top: 0px;
+    margin: 6px 0 0 0;
     font-variant: normal;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
-    color: rgb(100, 100, 100);
+    color: rgb(40, 40, 40);
+    opacity: .8;
 }
 
 .block p {
+        font-family: 'Open Sans', sans-serif;
+            font-size: 15.5px; 
     text-align: center;
-    color: rgb(137, 137, 137);
-    padding: 4px 25px 0 25px;
-    font-size: 15px;    
-    font-family: 'Open Sans';
+    padding: 8px 25px 0 25px;
+        color: rgb(137, 137, 137);
+            opacity: .9;  
 }
 
 .block-1 h1 {
@@ -304,7 +312,7 @@ img {
     color: white;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin: 67.5px 0 10px 0;
+    margin: 60px 0 10px 0;
     font-size: 18px;  
     font-weight: 700; 
 }
@@ -346,7 +354,7 @@ img {
 }
 
 .social-footer img {
-    margin: 25px 0 0 10px;
+    margin: 25px 50px 0 0;
 }
 
 
@@ -354,8 +362,8 @@ img {
     width: 100%;
     color: rgb(72, 103, 184);
     font-size: 13px;
-    margin: 35px 20px 0 20px; 
-    font-family: 'Open Sans';
+    margin: 35px 40px 0 0; 
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Small Devices, Tablets */
@@ -366,7 +374,7 @@ img {
     }
 
     .nav-custom a.navbar-brand {
-        font-size:27px;
+        font-size:28px;
     } 
 
     ul.nav-menu li a {
@@ -374,14 +382,14 @@ img {
     }
 
     ul.nav-menu img {
-        width: 28px;
-        height: 28px;
+        width: 22px;
+        height: 22px;
     }
 
     .jumbotron-c {
         width: 100%;
         height: 140px;
-        margin:30px 0 25px 0;
+        margin:22px 0 22px 0;
     }
 
     .jumbotron-c p{
@@ -392,7 +400,7 @@ img {
     }
 
     li:nth-child(1){
-        margin-top: 4.5px;
+        margin-top: 3.4px;
     }
 
     li:nth-child(3){
@@ -400,7 +408,7 @@ img {
     }
 
     li:nth-child(4){
-        margin-top: 2px;
+        margin-top: .4px;
     }
 
     p:nth-child(2){
@@ -410,7 +418,7 @@ img {
     .jumbotron-c span {
         color: black;
         font-size: 35px;
-        animation: blinker 1.2s linear infinite;
+        animation: blinker 1.3s linear infinite;
     }
 
     @keyframes blinker {  
@@ -418,20 +426,20 @@ img {
     }
 
     .block h2 {
-        margin: 38px 0 10px 0;
-        font-size: 18px;
+        margin: 38px 0 6px 0;
+        font-size: 17px;
         text-align: center;
     }
 
     .block h1 {
-        margin: 10px 0 0 0px;
-        font-size: 24px;
+        margin: 5px 0 4px 0;
+        font-size: 25px;
     }
 
     .block p {
-        margin: 10px 16px 0 16px;
+        margin: 0 16px 0 16px;
         text-align: center;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .block-1 h1 {
@@ -712,7 +720,7 @@ img {
     }
 
     .nav-custom a.navbar-brand {
-        font-size:28px;
+        font-size:30px;
     } 
 
     ul.nav-menu li a {
@@ -742,17 +750,17 @@ img {
     }
 
     .block h2 {
-        margin: 36px 0 0 0;
-        font-size: 22px;
+        margin: 40px 0 0 0;
+        font-size: 19px;
     }
     .block h1 {
         margin: 10px 0 0px 0;
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .block p {
-        margin: 14px 0 0 0;
-        font-size: 20px;
+        margin: 8px 0 0 0;
+        font-size: 16px;
     }
 
     .tile-1 {
@@ -932,7 +940,7 @@ img {
         margin: 65px 0 0px 0;
     }
     .nav-custom a.navbar-brand {
-        font-size:26px;
+        font-size:32px;
     } 
 
 
@@ -942,11 +950,11 @@ img {
 
     .jumbotron-c {
         height: 180px;
-        margin:50px 0 0 0;
+        margin:50px 0 10px 0;
     }
 
     .jumbotron-c p{
-        font-size: 46px;
+        font-size: 44px;
     }
 
     .jumbotron-c span {
@@ -962,17 +970,18 @@ img {
     }
 
     .block h2 {
-        margin: 44px 0 0 0;
-        font-size: 22px;
+        margin: 60px 0 0 0;
+        font-size: 24px;
+
     }
     .block h1 {
-        margin: 14px 0 0 0;
-        font-size: 38px;
+        margin: 10px 0 0 0;
+        font-size: 37px;
     }
 
     .block p {
-        margin: 20px 15px 0 15px;
-        font-size: 22px;
+        margin: 10px 15px 0 15px;
+        font-size: 20px;
     }
 
     .tile-1 {
@@ -1131,7 +1140,7 @@ img {
         width: 34px;
         height: 34px;
         margin: 50px 0 0 90px;
-    }
+    }  
 
     .footer-block p {
         font-size: 18px;
