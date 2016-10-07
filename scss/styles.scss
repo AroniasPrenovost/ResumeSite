@@ -79,7 +79,7 @@ ul.nav-menu li a {
     font-weight: 300;
     margin: 0 0 0 0;
     text-align: left;
-        opacity: .8;
+    opacity: .8;
 }
 
 p:nth-child(2){
@@ -143,24 +143,43 @@ img {
 }
 
 .block p {
-        font-family: 'Open Sans', sans-serif;
-            font-size: 15.5px; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15.5px; 
     text-align: center;
     padding: 8px 25px 0 25px;
-        color: rgb(137, 137, 137);
-            opacity: .9;  
+    color: rgb(137, 137, 137);
+    opacity: .9;  
 }
 
+/* target h1 on tiles 1, 4,5,8 */ 
 .block-1 h1 {
     position: absolute;
     color: white;
     text-align: center;
     font-variant: normal;
     font-family: 'Open Sans';
-    margin: 80px 0 0 0;
+    margin: 106px 0 0 4px;
     font-size:32px;
     font-weight: 700;
 }
+
+.back-4 > .block-1 {
+    position: absolute;
+    margin: 0px 62px 0 65px;
+}
+
+.tile-5 > .back-4 > .block-1  {
+    position: absolute;
+    margin: 10px 0 0 115px;
+    font-size:42px;
+}
+
+.tile-5 > .back-4 > .block-1 h1  {
+    position: absolute;
+    margin: 105px 20px 0 0;
+    font-size:32px;
+}
+/* end of hacky code */
 
 .tile-2 {
     position: relative;
@@ -441,275 +460,297 @@ img {
         text-align: center;
         font-size: 15px;
     }
+/* hacky code */
+.block-1 h1 {
+    margin: 115px 0 0 36px;
+    font-size: 28px;
+}
 
-    .block-1 h1 {
-        margin: 90px 0 0 36px;
-        font-size: 28px;
-    }
+/* hacky code */
+.back-4 > .block-1 h1 {
+    width: 245px;
+    margin: 85px 0 0 0;
+}
 
-    .tile-1 {
-        width: 375px;
-        height: 265px;
-        float: left;
-        margin: 0 0 0 0;         
-    }
+.tile-5 > .back-4 > .block-1  {
+    margin: 72px 0 0 121px;
+    font-size:45px;
+}
 
-    .tile-1 > .front-1 {
-        position: absolute;
-        -webkit-transform: perspective(100px) rotateY(0deg);
-        transform: perspective(100px) rotateY(0deg);
-        width: 375px;
-        height: 265px;
-        background: transparent;
-        border-radius: 0px;
-        -webkit-backface-visibility: hidden;
-        transition: -webkit-transform .0s linear 0s;
-        transition: transform .0s linear 0s; 
-    }
+.tile-5 > .back-4 > .block-1 h1 {
+    margin: 95px 0 0 11px;
+    font-size:20px;
+}
 
-    .tile-1 > .back-1 {
-        position: absolute;
-        -webkit-transform: perspective(100px) rotateY(180deg);
-        transform: perspective(100px) rotateY(180deg);
-        width: 375px;
-        height: 265px;
-        background: gray;
-        opacity: .85;
-        border-radius: 0px;
-        -webkit-backface-visibility: hidden;
-        transition: -webkit-transform .0s linear 0s;
-        transition: transform .0s linear 0s; 
-    }
+.back-8 > .block-1 h1 {
+    margin: 95px 0px 0 0;
+    font-size:32px;
+}
+/* hacky code */
 
-    .tile-1:hover > .front-1 {
-        -webkit-transform: perspective(100px) rotateY(-180deg);
-        transform: perspective(100px) rotateY(-180deg); 
-    }
+.tile-1 {
+    width: 375px;
+    height: 265px;
+    float: left;
+    margin: 0 0 0 0;         
+}
 
-    .tile-1:hover > .back-1 {
-        -webkit-transform: perspective(100px) rotateY(0deg);
-        transform: perspective(100px) rotateY(0deg);
-    }
+.tile-1 > .front-1 {
+    position: absolute;
+    -webkit-transform: perspective(100px) rotateY(0deg);
+    transform: perspective(100px) rotateY(0deg);
+    width: 375px;
+    height: 265px;
+    background: transparent;
+    border-radius: 0px;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform .0s linear 0s;
+    transition: transform .0s linear 0s; 
+}
+
+.tile-1 > .back-1 {
+    position: absolute;
+    -webkit-transform: perspective(100px) rotateY(180deg);
+    transform: perspective(100px) rotateY(180deg);
+    width: 375px;
+    height: 265px;
+    background: gray;
+    opacity: .85;
+    border-radius: 0px;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform .0s linear 0s;
+    transition: transform .0s linear 0s; 
+}
+
+.tile-1:hover > .front-1 {
+    -webkit-transform: perspective(100px) rotateY(-180deg);
+    transform: perspective(100px) rotateY(-180deg); 
+}
+
+.tile-1:hover > .back-1 {
+    -webkit-transform: perspective(100px) rotateY(0deg);
+    transform: perspective(100px) rotateY(0deg);
+}
 
 
-    .tile-2 {
-        width: 375px;
-        height: 265px;
-        background-color: rgb(242,242,242);
-    }
+.tile-2 {
+    width: 375px;
+    height: 265px;
+    background-color: rgb(242,242,242);
+}
 
-    .tile-2 > .front-2 {
-        position: absolute;
-        width: 375px;
-        height: 265px;
-        border-radius: 0px;
-    }
+.tile-2 > .front-2 {
+    position: absolute;
+    width: 375px;
+    height: 265px;
+    border-radius: 0px;
+}
 
-    .tile-3 {
-        width: 375px;
-        height: 265px;
-        float: left;
-    }
+.tile-3 {
+    width: 375px;
+    height: 265px;
+    float: left;
+}
 
-    .tile-3 > .front-3 {
-        position: absolute;
-        width: 375px;
-        height: 265px;
-        border-radius: 0px;
-    }
+.tile-3 > .front-3 {
+    position: absolute;
+    width: 375px;
+    height: 265px;
+    border-radius: 0px;
+}
 
-    .tile-4 {
-        width: 375px;
-        height: 265px;
-        padding: 0px 0 0px 0px;
-    }
+.tile-4 {
+    width: 375px;
+    height: 265px;
+    padding: 0px 0 0px 0px;
+}
 
-    .tile-4 > .front-4 {
-        position: absolute;
-        -webkit-transform: perspective(100px) rotateY(0deg);
-        transform: perspective(100px) rotateY(0deg);
-        background: transparent;
-        width: 375px;
-        height: 265px;
-        border-radius: 0px;
-        -webkit-backface-visibility: hidden;
-        transition: -webkit-transform .0s linear 0s;
-        transition: transform .0s linear 0s; 
-    }
+.tile-4 > .front-4 {
+    position: absolute;
+    -webkit-transform: perspective(100px) rotateY(0deg);
+    transform: perspective(100px) rotateY(0deg);
+    background: transparent;
+    width: 375px;
+    height: 265px;
+    border-radius: 0px;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform .0s linear 0s;
+    transition: transform .0s linear 0s; 
+}
 
-    .tile-4 > .back-4 {
-        position: absolute;
-        -webkit-transform: perspective(100px) rotateY(180deg);
-        transform: perspective(100px) rotateY(180deg);
-        background: gray;
-        opacity: .85;
-        width: 375px;
-        height: 265px;
-        border-radius: 0px;
-        -webkit-backface-visibility: hidden;
-        transition: -webkit-transform .0s linear 0s;
-        transition: transform .0s linear 0s; 
-    }
+.tile-4 > .back-4 {
+    position: absolute;
+    -webkit-transform: perspective(100px) rotateY(180deg);
+    transform: perspective(100px) rotateY(180deg);
+    background: gray;
+    opacity: .85;
+    width: 375px;
+    height: 265px;
+    border-radius: 0px;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform .0s linear 0s;
+    transition: transform .0s linear 0s; 
+}
 
-    .tile-4:hover > .front-4 {
-        -webkit-transform: perspective(100px) rotateY(-180deg);
-        transform: perspective(100px) rotateY(-180deg); 
-    }
+.tile-4:hover > .front-4 {
+    -webkit-transform: perspective(100px) rotateY(-180deg);
+    transform: perspective(100px) rotateY(-180deg); 
+}
 
-    .tile-4:hover > .back-4 {
-        -webkit-transform: perspective(100px) rotateY(0deg);
-        transform: perspective(100px) rotateY(0deg);
-    }
+.tile-4:hover > .back-4 {
+    -webkit-transform: perspective(100px) rotateY(0deg);
+    transform: perspective(100px) rotateY(0deg);
+}
 
-    .tile-5 {
-        width: 375px;
-        height: 265px;
-        padding: 0px 0 0px 0px;
-        background: rgb(10, 182, 180);
-    }
+.tile-5 {
+    width: 375px;
+    height: 265px;
+    padding: 0px 0 0px 0px;
+    background: rgb(10, 182, 180);
+}
 
-    .tile-5 > .front-5 {
-        position: absolute;
-        -webkit-transform: perspective(100px) rotateY(0deg);
-        transform: perspective(100px) rotateY(0deg);
-        background: transparent;
-        width: 375px;
-        height: 265px;
-        border-radius: 0px;
-        -webkit-backface-visibility: hidden;
-        transition: -webkit-transform .0s linear 0s;
-        transition: transform .0s linear 0s; 
-    }
+.tile-5 > .front-5 {
+    position: absolute;
+    -webkit-transform: perspective(100px) rotateY(0deg);
+    transform: perspective(100px) rotateY(0deg);
+    background: transparent;
+    width: 375px;
+    height: 265px;
+    border-radius: 0px;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform .0s linear 0s;
+    transition: transform .0s linear 0s; 
+}
 
-    .tile-5:hover > .front-5 {
-        -webkit-transform: perspective(100px) rotateY(-180deg);
-        transform: perspective(100px) rotateY(-180deg); 
-    }
+.tile-5:hover > .front-5 {
+    -webkit-transform: perspective(100px) rotateY(-180deg);
+    transform: perspective(100px) rotateY(-180deg); 
+}
 
-    .front-5 > .block-1 h1 {
-        margin: 120px 0 0 120px;
-        font-size:28px;
-    }
+.front-5 > .block-1 h1 {
+    margin: 120px 0 0 120px;
+    font-size:28px;
+}
 
-    .tile-6 {
-        width: 375px;
-        height: 265px;
-        background-color: rgb(242,242,242);
-    }
+.tile-6 {
+    width: 375px;
+    height: 265px;
+    background-color: rgb(242,242,242);
+}
 
-    .tile-6 > .front-6 {
-        position: absolute;
-        width: 375px;
-        height: 265px;
-        border-radius: 0px;
-    }
+.tile-6 > .front-6 {
+    position: absolute;
+    width: 375px;
+    height: 265px;
+    border-radius: 0px;
+}
 
-    .tile-7 {
-        width: 375px;
-        height: 265px;
-        background-color: rgb(242,242,242);
-    }
+.tile-7 {
+    width: 375px;
+    height: 265px;
+    background-color: rgb(242,242,242);
+}
 
-    .tile-7 > .front-7 {
-        position: absolute;
-        width: 375px;
-        height: 265px;
-        border-radius: 0px;
-    }
+.tile-7 > .front-7 {
+    position: absolute;
+    width: 375px;
+    height: 265px;
+    border-radius: 0px;
+}
 
-    .tile-8 {
-        width: 375px;
-        height: 265px;
-        margin: 0px 0 0px 0px;
-    }
+.tile-8 {
+    width: 375px;
+    height: 265px;
+    margin: 0px 0 0px 0px;
+}
 
-    .tile-8 > .front-8 {
-        position: absolute;
-        -webkit-transform: perspective(100px) rotateY(0deg);
-        transform: perspective(100px) rotateY(0deg);
-        background: transparent;
-        width: 375px;
-        height: 265px;
-        border-radius: 0px;
-        -webkit-backface-visibility: hidden;
-        transition: -webkit-transform .0s linear 0s;
-        transition: transform .0s linear 0s; 
-    }
+.tile-8 > .front-8 {
+    position: absolute;
+    -webkit-transform: perspective(100px) rotateY(0deg);
+    transform: perspective(100px) rotateY(0deg);
+    background: transparent;
+    width: 375px;
+    height: 265px;
+    border-radius: 0px;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform .0s linear 0s;
+    transition: transform .0s linear 0s; 
+}
 
-    .tile-8 > .back-8 {
-        position: absolute;
-        -webkit-transform: perspective(100px) rotateY(180deg);
-        transform: perspective(100px) rotateY(180deg);
-        background: gray;
-        opacity: .85;
-        width: 375px;
-        height: 265px;
-        border-radius: 0px;
-        -webkit-backface-visibility: hidden;
-        transition: -webkit-transform .0s linear 0s;
-        transition: transform .0s linear 0s; 
-    }
+.tile-8 > .back-8 {
+    position: absolute;
+    -webkit-transform: perspective(100px) rotateY(180deg);
+    transform: perspective(100px) rotateY(180deg);
+    background: gray;
+    opacity: .85;
+    width: 375px;
+    height: 265px;
+    border-radius: 0px;
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform .0s linear 0s;
+    transition: transform .0s linear 0s; 
+}
 
-    .tile-8:hover > .front-8 {
-        -webkit-transform: perspective(100px) rotateY(-180deg);
-        transform: perspective(100px) rotateY(-180deg); 
-    }
+.tile-8:hover > .front-8 {
+    -webkit-transform: perspective(100px) rotateY(-180deg);
+    transform: perspective(100px) rotateY(-180deg); 
+}
 
-    .tile-8:hover > .back-8 {
-        -webkit-transform: perspective(100px) rotateY(0deg);
-        transform: perspective(100px) rotateY(0deg);
-    }
+.tile-8:hover > .back-8 {
+    -webkit-transform: perspective(100px) rotateY(0deg);
+    transform: perspective(100px) rotateY(0deg);
+}
 
-    .tile-9 {
-        width: 375px;
-        height: 265px;
-        margin: 0px 0 0px 0px;
-        background-image: url(../img/busSM.jpg);
-    }
+.tile-9 {
+    width: 375px;
+    height: 265px;
+    margin: 0px 0 0px 0px;
+    background-image: url(../img/busSM.jpg);
+}
 
-    .tile-9 > .front-9 {
-        position: absolute;
-        background: white;
-        opacity: .5;
-        width: 375px;
-        height: 265px;
-        border-radius: 0px;
-    }
+.tile-9 > .front-9 {
+    position: absolute;
+    background: white;
+    opacity: .5;
+    width: 375px;
+    height: 265px;
+    border-radius: 0px;
+}
 
-    #quote {
-        width: 100%;
-        margin: 85px 0 0 0;
-        font-size: 18px;  
-        font-weight: 600; 
-    }
+#quote {
+    width: 100%;
+    margin: 85px 0 0 0;
+    font-size: 18px;  
+    font-weight: 600; 
+}
 
-    .tile-10 {
-        width: 375px;
-        height: 265px;
-        background-color: rgb(242,242,242);
-    }
+.tile-10 {
+    width: 375px;
+    height: 265px;
+    background-color: rgb(242,242,242);
+}
 
-    .tile-10 > .front-10 {
-        width: 375px;
-        height: 265px;
-    }
+.tile-10 > .front-10 {
+    width: 375px;
+    height: 265px;
+}
 
-    .tile-11 {
-        width: 100%;
-        height: 70px;
-        background-color: white;
-    }
+.tile-11 {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
 
-    .social-footer img{
-        width: 25px;
-        height: 25px;
-        margin: 46px 10px 0 46px;
-    }
+.social-footer img{
+    width: 25px;
+    height: 25px;
+    margin: 46px 10px 0 46px;
+}
 
-    .footer-block p {
-        font-size: 14px;
-        margin: 50px 0 50px 80px; 
-    }
+.footer-block p {
+    font-size: 14px;
+    margin: 50px 0 50px 80px; 
+}
 }
 
 /* Medium Devices, Desktops */
@@ -745,190 +786,213 @@ img {
     }
 
     .block-1 h1 {
-        margin: 110px 0 0 25px;
-        font-size: 38px;
+        margin: 125px 12px 0 0px;
+        font-size: 40px;
     }
 
-    .block h2 {
-        margin: 40px 0 0 0;
-        font-size: 19px;
-    }
-    .block h1 {
-        margin: 10px 0 0px 0;
-        font-size: 28px;
-    }
+/* hacky code */
+.back-4 > .block-1  {
+    width: 245px;
+    margin: 20px 0 0 115px;
+}
 
-    .block p {
-        margin: 8px 0 0 0;
-        font-size: 16px;
-    }
+.tile-5 > .back-4 > .block-1  {
+    margin: 50.5px 0 0 53.5px;
+    font-size:38px;
+}
 
-    .tile-1 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-5 > .back-4 > .block-1 h1 {
+    margin: 114px 0 0 70px;
+    font-size:26px;
+}
 
-    .tile-1 > .front-1 {
-        width: 485px;
-        height: 330px;
-    }
+.back-8 > .block-1 h1 {
+    margin: 125px 10px 0 120px;
+    font-size:35px;
+    width: 245px;
+}
+/* hacky code */
 
-    .tile-1 > .back-1 {
-        width: 485px;
-        height: 330px;
-    }
+.block h2 {
+    margin: 40px 0 0 0;
+    font-size: 18px;
+}
+.block h1 {
+    margin: 10px 0 0px 0;
+    font-size: 28px;
+}
 
-    .tile-2 {
-        width: 485px;
-        height: 330px;
-    }
+.block p {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+}
 
-    .tile-2 > .front-2 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-1 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-2 > .back-2 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-1 > .front-1 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-3 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-1 > .back-1 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-3 > .front-3 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-2 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-3 > .back-3 {
-        width: 485px;
-        height: 330px; 
-    }
+.tile-2 > .front-2 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-4 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-2 > .back-2 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-4 > .front-4 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-3 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-4 > .back-4 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-3 > .front-3 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-5 {
-        width: 485px;
-        height: 330px;
-        background: rgb(10, 182, 180);
-    }
+.tile-3 > .back-3 {
+    width: 485px;
+    height: 330px; 
+}
 
-    .tile-5 > .front-5 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-4 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-6 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-4 > .front-4 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-6 > .front-6 {
+.tile-4 > .back-4 {
+    width: 485px;
+    height: 330px;
+}
 
-        width: 485px;
-        height: 330px;
-    }
+.tile-5 {
+    width: 485px;
+    height: 330px;
+    background: rgb(10, 182, 180);
+}
 
-    .tile-6 > .back-6 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-5 > .front-5 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-7 {
-        width: 485px;
-        height: 330px;
-        float: left;
-        padding: 0px 0 0px 0px;
-    }
+.tile-6 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-7 > .front-7 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-6 > .front-6 {
 
-    .tile-7 > .back-7 {
-        width: 485px;
-        height: 330px;
-    }
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-8 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-6 > .back-6 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-8 > .front-8 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-7 {
+    width: 485px;
+    height: 330px;
+    float: left;
+    padding: 0px 0 0px 0px;
+}
 
-    .tile-8 > .back-8 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-7 > .front-7 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-9 {
-        width: 485px;
-        height: 330px;
-        background-image: url(../img/busMD.jpg);
-    }
+.tile-7 > .back-7 {
+    width: 485px;
+    height: 330px;
+}
 
+.tile-8 {
+    width: 485px;
+    height: 330px;
+}
 
-    #quote {
-        width: 100%;
-        margin: 97.5px 0 0 0;
-        font-size: 25px;   
-    }
+.tile-8 > .front-8 {
+    width: 485px;
+    height: 330px;
+}
 
+.tile-8 > .back-8 {
+    width: 485px;
+    height: 330px;
+}
 
-    .tile-10 {
-        width: 485px;
-        height: 330px;
-    }
-
-    .tile-10 > .front-10 {
-        width: 485px;
-        height: 330px;
-    }
-
-    .tile-10 > .back-10 {
-        width: 485px;
-        height: 330px;
-    }
+.tile-9 {
+    width: 485px;
+    height: 330px;
+    background-image: url(../img/busMD.jpg);
+}
 
 
-    .tile-11 {
-        width: 100%;
-        height: 100px;
-    }
-    .social-footer {
-        margin-left: 100px;
-    }
-    .social-footer img{
-        width: 30px;
-        height: 30px;
-        margin: 50px 0 0 72.5px;
-    }
+#quote {
+    width: 100%;
+    margin: 97.5px 0 0 0;
+    font-size: 25px;   
+}
 
-    .footer-block p {
-        font-size: 16px;
-        margin:55px 0 50px 120px; 
-    }
+
+.tile-10 {
+    width: 485px;
+    height: 330px;
+}
+
+.tile-10 > .front-10 {
+    width: 485px;
+    height: 330px;
+}
+
+.tile-10 > .back-10 {
+    width: 485px;
+    height: 330px;
+}
+
+
+.tile-11 {
+    width: 100%;
+    height: 100px;
+}
+.social-footer {
+    margin-left: 100px;
+}
+.social-footer img{
+    width: 30px;
+    height: 30px;
+    margin: 50px 0 0 72.5px;
+}
+
+.footer-block p {
+    font-size: 16px;
+    margin:55px 0 50px 120px; 
+}
 
 }
 
@@ -966,184 +1030,204 @@ img {
     }
 
     .block-1 h1 {
-        margin: 150px 0 0 22.5px;
+        margin: 170px 0 0 85px;
     }
 
-    .block h2 {
-        margin: 60px 0 0 0;
-        font-size: 24px;
+/* hacky code */
+.back-4 > .block-1 h1 {
+    width: 245px;
+    margin: 110px 0 0 55px;
+}
+.tile-5 > .back-4 > .block-1  {
+    font-size:38px;
+}
 
-    }
-    .block h1 {
-        margin: 10px 0 0 0;
-        font-size: 37px;
-    }
+.tile-5 > .back-4 > .block-1 h1 {
+    margin: 113px 0 0 63px;
+    font-size:32px;
+}
+.back-8 > .block-1 h1 {
+    margin: 135px 10px 0 160px;
+    font-size:40px;
+    width: 245px;
+}
+/* hacky code */
 
-    .block p {
-        margin: 10px 15px 0 15px;
-        font-size: 20px;
-    }
+.block h2 {
+    margin: 60px 0 0 0;
+    font-size: 24px;
 
-    .tile-1 {
-        width: 585px;
-        height: 440px;
-    }
+}
+.block h1 {
+    margin: 10px 0 0 0;
+    font-size: 37px;
+}
 
-    .tile-1 > .front-1 {
-        width: 585px;
-        height: 440px;
-    }
+.block p {
+    margin: 10px 15px 0 15px;
+    font-size: 20px;
+}
 
+.tile-1 {
+    width: 585px;
+    height: 440px;
+}
 
-    .tile-1 > .back-1 {
-        width: 585px;
-        height: 440px;
-    }
-
-
-    .tile-2 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-2 > .front-2 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-2 > .back-2 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-3 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-3 > .front-3 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-3 > .back-3 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-4 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-4 > .front-4 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-4 > .back-4 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-5 {
-        width: 585px;
-        height: 440px;
-        background: rgb(10, 182, 180);
-    }
-
-    .tile-5 > .front-5 {
-        background: transparent;
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-6 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-6 > .front-6 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-6 > .back-6 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-7 {
-        width: 585px;
-        height: 440px;
-        float: left;
-    }
-
-    .tile-7 > .front-7 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-7 > .back-7 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-8 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-8 > .front-8 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-8 > .back-8 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-9 {
-        width: 585px;
-        height: 440px;
-        background-image: url(../img/busLG.jpg);
-    }
-
-    #quote {
-        margin: 140px 0 0 0;
-        font-size: 30px;   
-    }
-
-    .tile-10 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-10 > .front-10 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-10 > .back-10 {
-        width: 585px;
-        height: 440px;
-    }
-
-    .tile-11 {
-        width: 100%;
-        height: 30px;
-    }
+.tile-1 > .front-1 {
+    width: 585px;
+    height: 440px;
+}
 
 
-    .social-footer img{
-        width: 34px;
-        height: 34px;
-        margin: 50px 0 0 90px;
-    }  
+.tile-1 > .back-1 {
+    width: 585px;
+    height: 440px;
+}
 
-    .footer-block p {
-        font-size: 18px;
-        margin:10px 0 0 0 20px; 
-    }
+
+.tile-2 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-2 > .front-2 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-2 > .back-2 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-3 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-3 > .front-3 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-3 > .back-3 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-4 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-4 > .front-4 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-4 > .back-4 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-5 {
+    width: 585px;
+    height: 440px;
+    background: rgb(10, 182, 180);
+}
+
+.tile-5 > .front-5 {
+    background: transparent;
+    width: 585px;
+    height: 440px;
+}
+
+.tile-6 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-6 > .front-6 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-6 > .back-6 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-7 {
+    width: 585px;
+    height: 440px;
+    float: left;
+}
+
+.tile-7 > .front-7 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-7 > .back-7 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-8 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-8 > .front-8 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-8 > .back-8 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-9 {
+    width: 585px;
+    height: 440px;
+    background-image: url(../img/busLG.jpg);
+}
+
+#quote {
+    margin: 140px 0 0 0;
+    font-size: 30px;   
+}
+
+.tile-10 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-10 > .front-10 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-10 > .back-10 {
+    width: 585px;
+    height: 440px;
+}
+
+.tile-11 {
+    width: 100%;
+    height: 30px;
+}
+
+
+.social-footer img{
+    width: 34px;
+    height: 34px;
+    margin: 50px 0 0 90px;
+}  
+
+.footer-block p {
+    font-size: 18px;
+    margin:10px 0 0 0 20px; 
+}
 }
