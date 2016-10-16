@@ -1,26 +1,26 @@
 {
-  "name": "livesite",
+  "name": "ResumeSite",
   "version": "1.0.0",
-  "description": "This is my live site. ",
+  "description": "This is my portfolio website.",
   "main": "sketch.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/AroniasPrenovost/liveSite.git"
+    "url": "git+ssh://git@github.com/AroniasPrenovost/ResumeSite.git"
   },
   "keywords": [
-    "aron",
-    "live",
-    "site"
+    "Aron",
+    "Resume",
+    "Website"
   ],
   "author": "aron prenovost",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/AroniasPrenovost/liveSite/issues"
+    "url": "https://github.com/AroniasPrenovost/ResumeSite/issues"
   },
-  "homepage": "https://github.com/AroniasPrenovost/liveSite#readme",
+  "homepage": "https://github.com/AroniasPrenovost/ResumeSite#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
