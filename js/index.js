@@ -1,6 +1,4 @@
-// quote generator
-
-
+// quote generator 
 var quotesArr = [];
 quotesArr[0] = '"Playfully doing something difficult, whether useful or not, that is hacking." <br><br> Richard Stallman';
 quotesArr[1] = '"Sharing is good, and with digital technology, sharing is easy." <br><br> Richard Stallman';
@@ -14,8 +12,7 @@ quotesArr[8] = '"Design and programming are human activities; forget that and al
 quotesArr[9] = '"Just take it slow and do not hurt your brain." <br><br> Zed Shaw';
 quotesArr[10] = '"I realized that the feeling of making progress is just as important as making actual progress." <br><br> John Resig';
 quotesArr[11] = '"Clearly, I reject the view that there is only one way that is right for everyone and for every problem." <br><br> Bjarne Stroustrup';
-
-// cycle through the quotes
+// adds timer to function 
 setInterval(displayDetails, 3500);
 
 function displayDetails(){
