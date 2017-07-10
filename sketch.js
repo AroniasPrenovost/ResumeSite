@@ -4,8 +4,8 @@ function setup() {
 canvas.parent("sketch-holder");
 background(72, 103, 184);
 smooth();
-strokeWeight(.2);
-frameRate(60);
+strokeWeight(.35);
+frameRate(20);
 }
 
 function draw() {
@@ -15,4 +15,6 @@ function draw() {
 	line(random(mouseX), random(mouseX), 280, 170);
 	fill(72, 103, 184);
 }
+
+
 
