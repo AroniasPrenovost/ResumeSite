@@ -1,8 +1,12 @@
-html body {
+html  {
   overflow-x: hidden;
 }
+body {
+
+}
+
 .proj-block h1 {
-  font-weight:400;
+  font-weight:600;
   color:#4867b8;
 }
 
@@ -11,9 +15,13 @@ html body {
   opacity: 1; 
 }
 
+p.break {
+  color:transparent;
+}
 span.comments {
   color:#4867b8;
 }
+
 /* Small Devices, Tablets */
 @media (min-width: 768px) {
   .proj-block h1 {

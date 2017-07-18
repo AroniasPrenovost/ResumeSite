@@ -2,10 +2,12 @@ function setup() {
 	var canvas = createCanvas(585, 440);
 // places canvas in div element
 canvas.parent("sketch-holder");
-background(72, 103, 184);
+background(000);
 smooth();
 strokeWeight(.35);
-frameRate(20);
+frameRate(18);
+
+  var outside = color(153, 51, 0);
 }
 
 function draw() {

@@ -24,5 +24,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "lazysizes": "^4.0.0-rc3"
   }
 }
