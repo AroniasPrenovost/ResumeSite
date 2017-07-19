@@ -213,7 +213,7 @@ img {
   /* hacky move to overlap with the canvas */
   float: left;
   margin: 0 0 0 0;
-  background: #0ab6b4; }
+  background: black; }
 
 .tile-5 > .front-5 {
   position: absolute;
