@@ -2,24 +2,300 @@ html  {
   overflow-x: hidden;
 }
 
+span.line {
+  color:#4867b8 !important;
+}
+
+/* hide on mobile */
+.play-button {
+  border-width: 0px 0px 0px 0px;
+  border-color: transparent;
+}
+
+/* code loader */
+.wrapper {
+  height: 100%; 
+  width: 100%;
+}
+
+#code-container {
+  background-color: transparent;
+  position:relative;
+  width:0;
+  height:0;
+}
+
+#code-loader {
+  position: absolute;
+  background-color:transparent;
+  width: 300px;
+  height: 700px;
+  z-index: 15;
+  top: 60%;
+  margin: -100px 0 0 -150px;
+
+  overflow:hidden;
+}
+
+.message {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; 
+  height:75%;
+  bottom: 0; 
+  display: block;
+  position: absolute;
+  margin-left:5%;
+  color: #fff;
+  padding: 0.5em;
+  color:white;
+}
+
+#bar1, #bar2, #bar3, #bar4, #bar5, #bar6, #bar7, #bar8, #bar9, #bar10, #bar11, #bar12, #bar13, #bar14, #bar15, #bar16, #bar17, #bar18, #bar19, #bar20, #bar21, #bar22, #bar23, #bar24, #bar25, #bar26, #bar27, #bar28, #bar29, 
+#bar30, #bar31, #bar32, #bar33, #bar34, #bar35, 
+#bar36, #bar37, #bar38, #bar39, #bar40, #bar41 {
+  width: 0%;
+  height: 5px;
+  margin-bottom:2px;
+  margin-left:4px;
+  background-color: #bdc3c7;
+}
+
+#bar2 {
+  margin-left:10px;
+  background-color: #efc88b;
+}
+
+#bar3 {
+  margin-left:30px;
+  margin-top:-7px
+}
+
+#bar4 {
+  background-color:#7FB069;
+  margin-left:20px;
+}
+
+#bar5 {
+  float:left;
+  margin-left:58px;
+  margin-top: -7px;
+  background-color:#cf5c36;
+}
+
+#bar6 {
+  margin-left: 30px;
+}
+
+#bar7 {
+  margin-left:30px;
+  background-color: #efc88b;
+
+}
+
+#bar8 {
+  margin-left:50px;
+  margin-top:-7px;
+  background-color:#cf5c36;
+}
+
+#bar9 {
+  margin-left:20px;
+  background-color: #efc88b;
+}
+
+#bar10 {
+  margin-left:10px;
+}
+
+#bar11 {
+  margin-left:20px;
+  background-color: #efc88b;
+}
+
+#bar12 {
+  margin-top:-7px;
+  margin-left:52px;
+  background-color:#7FB069;
+}
+
+#bar13 {
+  margin-left:30px;
+  background-color:#cf5c36;
+}
+
+#bar14 {
+  margin-left:40px;
+  background-color: #efc88b;
+}
 
 
+#bar15 {
+  margin-top:-7px;
+  margin-left:60px;
+  background-color:#cf5c36;
+}
+
+#bar16 {
+  margin-top:-7px;
+
+  margin-left:77px;
+  background-color: #efc88b;
+}
+
+#bar17 {
+  margin-left:50px;
+  background-color:#7FB069;
+}
+
+#bar18 {
+  margin-top:-7px;
+  margin-left:64px;
+}
+
+#bar19 {
+  margin-left:60px;
+  background-color: #efc88b;
+}
+
+#bar20 {
+  margin-top:-7px;
+  margin-left:74px;
+}
+
+#bar21 {
+  margin-top:-7px;
+  margin-left:100px;
+  background-color: #efc88b;
+}
+
+#bar22 {
+  margin-left:50px;
+  background-color:#7FB069;
+}
+
+#bar23 {
+  margin-top:-7px;
+  margin-left:76px;
+  background-color:#cf5c36;
+}
+
+#bar24 {
+  margin-left:40px;
+}
+
+#bar25 {
+  margin-left:20px;
+  background-color: #efc88b;
+}
+
+#bar26 {
+  margin-left:10px;
+}
+
+#bar27 {
+  margin-left:20px;
+  background-color: #efc88b;
+}
+
+#bar28 {
+  margin-top:-7px;
+  margin-left:52px;
+  background-color:#7FB069;
+}
+
+#bar29 {
+  margin-left:30px;
+  background-color:#cf5c36;
+}
+
+#bar30 {
+  margin-left:40px;
+  background-color: #efc88b;
+}
+
+#bar31 {
+  margin-top:-7px;
+  margin-left:51px;
+  background-color:#cf5c36;
+}
+
+#bar32 {
+  margin-top:-7px;
+  margin-left:65px;
+  background-color: #efc88b;
+}
+
+#bar33 {
+  margin-left:40px;
+  background-color:#7FB069;
+}
+
+#bar34 {
+  margin-top:-7px;
+  margin-left:63px;
+}
+
+#bar35 {
+  margin-left:50px;
+  background-color: #efc88b;
+}
+
+#bar36 {
+  margin-top:-7px;
+  margin-left:70px;
+  background
+}
+
+#bar37 {
+  margin-left:40px;
+  background-color: #efc88b;
+}
+
+#bar38 {
+  margin-top:-7px;
+  margin-left:66px;
+  background-color:#7FB069;
+}
+
+#bar39 {
+  margin-left:30px;
+  background-color:#cf5c36;
+}
+
+#bar40 {
+  margin-left:15px;
+}
+
+#bar41 {
+  margin-left:5px;
+  background-color: #efc88b;
+}
+
+/* end code loader */
+
+h4.navi {
+  margin-top: 9%;
+  margin-left: 4%;
+}
 .tile-2 {
   background-color:#f2f2f2;
   height:260px;
 }
 
-span.line {
-  color:#4867b8;
-}
 .proj-block h1 {
   font-weight:600;
   color:#4867b8;
+  font-size: 26px;
+  margin-left: 10px;
 }
+
 
 .proj-block p {
   color: #898989;
-  opacity: 1; 
+  opacity: 1;
+  margin-left: 10px;
 }
 /* disables hardcoded spaces */
 .break {
@@ -42,6 +318,41 @@ span.comments {
 /* Small Devices, Tablets */
 @media (min-width: 768px) {
 
+  .play-button {
+    margin: 0 auto;
+    margin-left:92.5%;
+    top: 88.5%;
+    position: relative;  
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent /*#4867b8;*/#f2f2f2;
+    opacity: .75; 
+  }
+
+  .play-button:hover {
+    opacity: .55;
+  }
+
+  #code-container {
+    position:absolute;
+    width: 375px;
+    height:265px;
+    background-color: black;
+    z-index:1000;
+  }
+  #code-loader {
+    margin-left: 12.5%;
+  }
+
+  h4.navi {
+    margin-left:0%;
+  }
+  .tile-11 {
+    background-color: white;
+  }
+
   .break {
     display:initial;
   }
@@ -57,19 +368,37 @@ span.comments {
 
   .proj-block h1 {
     font-size:20px;
-    margin-top:58px;
+    margin-top:20px;
     margin-left:30px;
-    margin-bottom:30px;
+    margin-bottom:20px;
   }
 
   .proj-block p {
     margin-left:30px;
     font-weight:300;
     font-size: 15px;
+
   }
+
+
+
 }
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
+
+  .play-button {
+    border-width: 12px 0 12px 24px;
+  }
+
+  #code-container {
+    width:485px;
+    height:330px;
+  }
+
+  #code-loader {
+    margin-left: 30%;
+    top: 70%;
+  }
 
   .tile-2 {
     height:330px;
@@ -80,10 +409,11 @@ span.comments {
   }
   .proj-block h1 {
     font-size:30px;
-    margin-top:58px;
+    margin-top:25px;
     margin-left:30px;
-    margin-bottom:30px;
+    margin-bottom:25px;
   }
+
 
   .proj-block p {
     margin-left:30px;
@@ -93,6 +423,20 @@ span.comments {
 }
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) {
+
+  .play-button {
+    border-width: 16px 0 16px 32px;
+  }
+
+  #code-container {
+    width:585px;
+    height:440px;
+  }
+
+  #code-loader {
+    margin-left: 40%;
+    top:60%;
+  }
 
   .tile-2 {
     height:440px;
@@ -108,10 +452,15 @@ span.comments {
     margin-bottom:30px;
   }
 
+
   .proj-block p {
     margin-left:30px;
     font-weight:300;
     font-size: 20px;
-
   }
+
+  .footer-block p {
+    margin: 55px 0 50px 225px;
+  }
+
 }
